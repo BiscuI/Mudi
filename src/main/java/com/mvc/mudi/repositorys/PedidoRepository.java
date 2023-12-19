@@ -7,5 +7,5 @@ import com.mvc.mudi.models.Pedido;
 
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long>{
-
+  List<Pedido> findByStatus(StatusPedido aguardando);
 }
